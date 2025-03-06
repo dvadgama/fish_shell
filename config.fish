@@ -4,4 +4,5 @@ if status is-interactive
     fish_ssh_agent
     fish_prompt
     fish_k8
+    fish_flutter
 end

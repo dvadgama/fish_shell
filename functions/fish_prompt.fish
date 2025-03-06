@@ -17,8 +17,10 @@ function __fish_status_info --description "send last status info"
   end
   
   function fish_prompt
-  
-    printf 'ubuntu@%s' $hostname  
+    
+    if [ (uname) != "Darwin" ]
+      printf 'ubuntu@%s' $hostname
+    end  
     __fish_status_info $status
   
     set_color $fish_color_cwd

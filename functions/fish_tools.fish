@@ -8,4 +8,9 @@ function fish_tools -d "add binaries to path"
     if test -d $HOME/.krew/bin
         fish_add_path $HOME/.krew/bin
     end    
+
+    if test -d /opt/homebrew/bin/
+      fish_add_path /opt/homebrew/bin/
+    end
+
 end
