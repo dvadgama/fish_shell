@@ -13,6 +13,9 @@ function asdf_show_updates_count
             echo "🚨 $outdated_count ASDF tools have updates!"
             echo "🔧 Run: asdf_install_updates"
             echo ""
+        else 
+            echo ""
+            echo "✅ All ASDF tools are latest stable"
         end
     end
 end
