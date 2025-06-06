@@ -10,6 +10,6 @@ if status is-interactive
           alias docker=podman
         end
 	if command -q asdf
-	  show_asdf_update
+	  asdf_show_updates_count
 	end
 end
