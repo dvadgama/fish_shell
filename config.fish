@@ -9,4 +9,7 @@ if status is-interactive
         if command -q podman
           alias docker=podman
         end
+	if command -q asdf
+	  show_asdf_update
+	end
 end
