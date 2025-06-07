@@ -14,10 +14,9 @@ function __fish_status_info --description "send last status info"
       printf '%s' $closing_bracket
     end
   
-  end
-  
-  function fish_prompt
-    
+end
+
+function fish_prompt
     if [ (uname) != "Darwin" ]
       printf 'ubuntu@%s' $hostname
     end  
@@ -30,4 +29,4 @@ function __fish_status_info --description "send last status info"
     #printf 🐬
     #printf "<🐠>"
     set_color normal
-  end
+end
