@@ -47,8 +47,9 @@ function asdf_check_updates
     if test $update_count -gt 0
         echo ""
         echo "🚨 $update_count ASDF tools have updates!"
-        echo "🔧 Run: asdf install [tool] [version] to update"
-        echo ""
+        echo "🔧 Run: asdf_install_updates --dry-run to test updates"
+        echo "🔧 Run: asdf_install_updates --exclude flutter python to exclude selected plugin from install"
+        echo "🔧 Run: asdf_install_updates to install  to update all of the tools"
     else
         echo ""
         echo "✅ All ASDF tools are latest stable"

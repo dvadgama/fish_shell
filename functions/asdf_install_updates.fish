@@ -79,9 +79,8 @@ function asdf_install_updates --description 'Auto-update ASDF tools, with option
                 echo "🔍 $plugin: $current_version → $latest_version (dry-run)"
             else
                 echo "⬆️  Updating $plugin: $current_version → $latest_version"
-		asdf_update_global_tools_version $plugin $latest_version
+		        asdf_update_global_tools_version $plugin $latest_version
                 asdf install $plugin $latest_version
-                asdf set $plugin $latest_version
             end
         end
     end
