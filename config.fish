@@ -13,6 +13,7 @@ if status is-interactive
     end
 
     if command -q asdf
+        source (brew --prefix asdf)/libexec/asdf.fish
         asdf_show_updates_count
     end
 

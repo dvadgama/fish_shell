@@ -10,7 +10,7 @@ function podman_setup --description "Configure Podman Docker API socket"
         # Export DOCKER_HOST globally
         set -gx DOCKER_HOST "unix://$sock_path"
         alias docker=podman
-        echo "🐳 Podman Docker API socket active at: $sock_path"
+        echo "🐳 Podman Docker API socket active"
     else
         echo "⚠️  Podman socket not found or failed to inspect."
     end
