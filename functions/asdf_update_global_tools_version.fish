@@ -1,4 +1,4 @@
-function asdf_update_global_tool_version --description 'Update version in ~/.tool-versions'
+function asdf_update_global_tools_version --description 'Update version in ~/.tool-versions'
     set plugin $argv[1]
     set new_version $argv[2]
     set toolfile "$HOME/.tool-versions"

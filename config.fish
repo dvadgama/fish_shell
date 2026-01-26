@@ -8,9 +8,10 @@ if status is-interactive
     fish_k8
     fish_flutter
     brew_monthly_update
-    if command -q podman
-        podman_setup
-    end
+    fish_go
+    # if command -q podman
+    #     podman_setup
+    # end
 
     if command -q asdf
         source (brew --prefix asdf)/libexec/asdf.fish
