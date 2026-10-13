@@ -29,3 +29,7 @@ if status is-interactive
 
     source "$HOME/.config/fish/functions/codex-functions.fish"
 end
+
+# Hermes Agent — ensure ~/.local/bin is on PATH
+fish_add_path "$HOME/.local/bin"
+set -gx HERMES_HOME "$HOME/workspace/repos/dmascot/agentic_flow"
